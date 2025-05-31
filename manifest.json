@@ -1,0 +1,15 @@
+{
+  "name": "Clatcher - Tic Tac Toe",
+  "description": "Ein einfaches Tic Tac Toe Spiel als Clatcher Plugin",
+  "version": "1.0",
+  "icons": {
+    "128": "favicon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.clatcher.org/start.php"],
+      "js": ["clatcher-script.js", "index.js"]
+    }
+  ],
+  "manifest_version": 3
+}
